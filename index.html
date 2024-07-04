@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sign Up for Love - Shoot Your Shot, Killeen</title>
+   <style>
+       body {
+           font-family: Arial, sans-serif;
+           background-color: #f4f4f4;
+           color: #333;
+           margin: 0;
+           padding: 20px;
+       }
+       #hero {
+           text-align: center;
+           margin-bottom: 20px;
+       }
+       #hero img {
+           max-width: 100%;
+           height: auto;
+       }
+       #sign-up {
+           max-width: 600px;
+           margin: 0 auto;
+           background: #fff;
+           padding: 20px;
+           border-radius: 10px;
+           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+       }
+       h2 {
+           text-align: center;
+           margin-bottom: 20px;
+           color: #b22222; /* Dark red color from the flyer */
+       }
+       label {
+           display: block;
+           margin: 10px 0 5px;
+           color: #333;
+       }
+       input[type="text"], input[type="number"], textarea, input[type="file"] {
+           width: 100%;
+           padding: 10px;
+           margin-bottom: 10px;
+           border: 1px solid #ccc;
+           border-radius: 5px;
+       }
+       input[type="checkbox"] {
+           margin-right: 5px;
+       }
+       .button {
+           display: block;
+           width: 100%;
+           padding: 10px;
+           background-color: #b22222; /* Dark red color from the flyer */
+           color: white;
+           text-align: center;
+           border: none;
+           border-radius: 5px;
+           cursor: pointer;
+           font-size: 16px;
+       }
+       .button:hover {
+           background-color: #8b0000; /* Darker shade of red */
+       }
+       .terms a {
+           color: #b22222; /* Dark red color from the flyer */
+       }
+   </style>
+</head>
+<body>
+   <section id="hero">
+       <img src="/mnt/data/76E9BB2D-EE48-48A7-A10E-64CFD9CA51D7.png" alt="Shoot Your Shot, Killeen">
+   </section>
+   <section id="sign-up">
+       <h2>Sign Up for Love</h2>
+       <form action="submit-profile.php" method="post" enctype="multipart/form-data">
+           <label for="name">Name:</label>
+           <input type="text" id="name" name="name" required>
+
+           <label for="age">Age:</label>
+           <input type="number" id="age" name="age" required>
+
+           <label for="height">Height:</label>
+           <input type="text" id="height" name="height" required>
+
+           <label for="occupation">Occupation:</label>
+           <input type="text" id="occupation" name="occupation" required>
+
+           <label for="statement">Why are you interested in this show?</label>
+           <textarea id="statement" name="statement" required></textarea>
+
+           <label for="type">What's your type?</label>
+           <textarea id="type" name="type" required></textarea>
+
+           <label for="single">Why are you single?</label>
+           <textarea id="single" name="single" required></textarea>
+
+           <label for="makes-you">What makes you him/her?</label>
+           <textarea id="makes-you" name="makes-you" required></textarea>
+
+           <label for="photo">Upload Photo:</label>
+           <input type="file" id="photo" name="photo" accept="image/*" required>
+
+           <label for="video">Upload Video:</label>
+           <input type="file" id="video" name="video" accept="video/*" required>
+
+           <input type="checkbox" id="terms" name="terms" required>
+           <label for="terms">I agree to the <a href="terms.html">terms and conditions</a>.</label>
+
+           <button type="submit" class="button">Submit Profile</button>
+       </form>
+   </section>
+</body>
+</html>
